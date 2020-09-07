@@ -49,10 +49,10 @@ mkdir ~/tools
 cd ~/tools/
 
 echo "installing httprobe"
+sudo wget https://dl.google.com/go/go1.14.3.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.14.3.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
 go get -u github.com/tomnomnom/httprobe
-cd httprobe
-go build main.go
-mv main httprobe  
 cd ~/tools/
 echo "done"
 
