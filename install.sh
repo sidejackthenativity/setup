@@ -56,6 +56,13 @@ go get -u github.com/tomnomnom/httprobe
 cd ~/tools/
 echo "done"
 
+echo "installing snap"
+sudo apt install snapd
+
+
+echo "installing amass"
+sudo snap install amass
+
 echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All tools are set up in ~/tools"
 ls -la
 echo "One last time: don't forget to set up AWS credentials in ~/.aws/!"
