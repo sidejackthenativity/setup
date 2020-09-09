@@ -9,6 +9,17 @@ sudo snap install jq
 sudo apt  install golang-go
 git clone https://github.com/tomnomnom/httprobe.git
 
+
+
+echo "installing bash_profile aliases from recon_profile"
+git clone https://github.com/sidejackthenativity/recon.git
+cd recon
+cat bash_profile >> ~/.bash_profile
+source ~/.bash_profile
+cd ~/tools/
+echo "done"
+
+
 go get -u github.com/tomnomnom/httprobe
 
 
