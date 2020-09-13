@@ -79,6 +79,9 @@ echo "installing wfuzz"
 pip install wfuzz
 sudo apt install wfuzz
 
+echo "installing LineEnum"
+git clone https://github.com/rebootuser/LinEnum.git
+
 echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All tools are set up in ~/tools"
 ls -la
 echo "One last time: don't forget to set up AWS credentials in ~/.aws/!"
