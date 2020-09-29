@@ -82,6 +82,12 @@ sudo apt install wfuzz
 echo "installing LineEnum"
 git clone https://github.com/rebootuser/LinEnum.git
 
+echo "massDns"
+git clone https://github.com/blechschmidt/massdns.git
+cd massdns
+make
+
+
 echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All tools are set up in ~/tools"
 ls -la
 echo "One last time: don't forget to set up AWS credentials in ~/.aws/!"
