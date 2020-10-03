@@ -82,10 +82,14 @@ sudo apt install wfuzz
 echo "installing LineEnum"
 git clone https://github.com/rebootuser/LinEnum.git
 
-echo "massDns"
+echo "installing massDns"
 git clone https://github.com/blechschmidt/massdns.git
 cd massdns
 make
+
+echo "installing Gobuster"
+go get github.com/OJ/gobuster
+
 
 
 echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All tools are set up in ~/tools"
