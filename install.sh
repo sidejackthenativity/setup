@@ -76,8 +76,7 @@ echo "installing gospider"
 go get -u github.com/jaeles-project/gospider
 
 echo "installing wfuzz"
-pip install wfuzz
-sudo apt install wfuzz
+sudo apt-get install -y wfuzz
 
 echo "installing LineEnum"
 git clone https://github.com/rebootuser/LinEnum.git
